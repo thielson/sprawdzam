@@ -2,50 +2,49 @@ config = {
 
     # This config file is used only in appengine.beecoss.com (Sample website)
     # Don't use values defined here
-    'environment': "boilerplate",
+    'environment': "sprawdzambank",
 
     # contact page email settings
-    'contact_sender': "appengine@beecoss.com",
-    'contact_recipient': "appengine@beecoss.com",
+    'contact_sender': "thielson@gmail.com",
+    'contact_recipient': "thielson@gmail.com",
 
     'send_mail_developer': False,
 
     # fellas' list
     'developers': (
-        ('GAE Developer', 'gae-developer2014@beecoss.com'),
+        ('Thielson', 'thielson@interia.pl'),
     ),
 
     # It is just an example to fill out this value
     'google_analytics_code': """
             <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-47489500-1', 'auto', {'allowLinker': true});
-            ga('require', 'linker');
-            ga('linker:autoLink', ['beecoss.com', 'blog.beecoss.com', 'appengine.beecoss.com']);
-            ga('send', 'pageview');
-            </script>
+  ga('create', 'UA-62889832-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
         """,
 
     # Password AES Encryption Parameters
     # aes_key must be only 16 (*AES-128*), 24 (*AES-192*), or 32 (*AES-256*) bytes (characters) long.
-    'aes_key': "9c20576a4330bbe719b23ac8bf3bb8a1",
-    'salt': "RdbkETeF$<^>%%X^8|e[9td62`dobFL[V&F&**@`UP6vqjGL,>v+k@ma^zd6WdG0;H>o-SGG9ynk",
+    'aes_key': "33ac8be719b29c20f3bb8a130bb576a4",
+    'salt': "dbkETeF$<^>%%X^8|e[9td62`dobFL[V&F&**@`UP6vqjGL,>v+k@ma^zd6WdG0;H>o-SGG9ynkR",
 
     # get your own consumer key and consumer secret by registering at https://dev.twitter.com/apps
     # callback url must be: http://[YOUR DOMAIN]/login/twitter/complete
-    'twitter_consumer_key': 'rrgGr00w3HRJYzmxNLMgzQ',
-    'twitter_consumer_secret': '5IdJDvSRdbkETeFjFeIxS7IoERWn8nGk5NfGSGG9ynk',
+    'twitter_consumer_key': 'n2fKahqt4L1NZj8V2AhSAZNuS',
+    'twitter_consumer_secret': 'p9w2bieS8LqvMWQCMphz2HCiCrdtFg0DVMa9tNUSgCoKHCr5QT',
 
     #Facebook Login
     # get your own consumer key and consumer secret by registering at https://developers.facebook.com/apps
     #Very Important: set the site_url= your domain in the application settings in the facebook app settings page
     # callback url must be: http://[YOUR DOMAIN]/login/facebook/complete
-    'fb_api_key': '265551733563729',
-    'fb_secret': '9de58570269f23b768726f3617ceb6ce',
+    'fb_api_key': '678338665605528',
+    'fb_secret': 'bd5b7a0165fbd0e3fe97b067e2d715fe',
 
     #Linkedin Login
     #Get you own api key and secret from https://www.linkedin.com/secure/developer
